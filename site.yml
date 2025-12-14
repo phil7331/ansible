@@ -1,0 +1,8 @@
+- name: Ubuntu bootstrap
+  hosts: localhost
+  become: true
+
+  roles:
+    - packages
+    - docker
+    - devtools
