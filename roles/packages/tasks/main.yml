@@ -20,3 +20,11 @@
       - docker.io
       - docker-compose-plugin
     state: present
+
+- name: Install JetBrains IDEs (classic snaps)
+  snap:
+    name:
+      - pycharm-community
+      - intellij-idea-community
+    classic: yes
+    state: present
