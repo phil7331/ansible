@@ -21,10 +21,21 @@
       - docker-compose-plugin
     state: present
 
-- name: Install JetBrains IDEs (classic snaps)
+- name: Install classic snaps
   snap:
     name:
       - pycharm-community
       - intellij-idea-community
+      - sublime-text
+    classic: yes
+    state: present
+
+- name: Install snaps
+  snap:
+    name:
+      - whatsapp-electron
+      - steam
+      - discord
+      - firefox
     classic: yes
     state: present
